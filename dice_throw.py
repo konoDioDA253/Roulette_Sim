@@ -1,3 +1,11 @@
+"""
+Author: Ilwad Issa
+Description: 
+This Python script simulates rolling two six-sided dice a specified number of times and calculates the sum of the dice outcomes. 
+It then counts the frequency of each possible sum and generates a bar graph using matplotlib to visualize the distribution of the sums obtained.
+Date : 26/12/2023
+"""
+
 import random
 import matplotlib.pyplot as plt
 
@@ -8,7 +16,7 @@ def roll_multiple_dice(num_dice):
     return sum(roll_dice() for _ in range(num_dice))
 
 # Simulate rolling multiple dice 100 times and summing the results
-num_rolls = 1000
+num_rolls = 100000
 num_dice = 10  # Change this number to roll a different quantity of dice
 results = []
 for _ in range(num_rolls):
